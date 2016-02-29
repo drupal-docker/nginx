@@ -1,30 +1,38 @@
 NGINX for Drupal
 =================
 
-# Contributing
+[![Build Status](https://travis-ci.org/drupal-docker/nginx.svg?branch=master)](https://travis-ci.org/drupal-docker/nginx)
 
-Contributions are highly welcomed and appreciated. Every little help counts, so do not hesitate!
+Version | Tags | Dockerfile | Layers
+--- | --- | --- | ---
+1.9 | `latest`, `1.9`, `1` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/Dockerfile) | [![drupaldocker/php:5.4-cli](https://badge.imagelayers.io/drupaldocker/nginx:latest.svg)](https://imagelayers.io/?images=drupaldocker/nginx:latest)
 
 # Quickstart:
 
-````
-docker run -d -p 80:80 --volumes-from php-fpm --link php-fpm:php drupal-docker/nginx
-````
-where `php-fpm` is a name of running [`drupal-docker/php:fpm`](https://github.com/drupal-docker/php) container
+```bash
+docker run -d -p 80:80 --volumes-from <php-or-data-container> --link <php-fpm-container>:php drupal-docker/nginx
+```
 
-# Versions (Docker tags):
+# Environmental variables
 
-- `latest` ([Dockerfile](https://github.com/drupal-docker/nginx/blob/master/Dockerfile))
+No variables
 
-# Roadmap
+# Description
 
-- Fix nginx configuration
-- Fix vhost configuration
-- Fix documentation
+@todo
 
 # Status
 
 Proof of concept
+
+# Contributing
+
+1. Fork the repo
+1. Create your feature branch
+1. Commit your changes
+1. Push to the branch
+1. Create new Pull Request
+1. Wait for result of automate tests
 
 # Credits
 
