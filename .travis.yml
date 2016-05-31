@@ -3,12 +3,15 @@ sudo: required
 services:
   - docker
 
+env:
+  matrix:
+    - DOCKERFILE="stable"
+
 before_script:
   - docker version
 
 script:
-  - docker build -t nginx .
+  - docker build -t ${DOCKERFILE} ./${DOCKERFILE}
 
 after_script:
   - docker images
-  - docker ps -a

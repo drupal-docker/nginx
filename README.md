@@ -6,7 +6,7 @@ NGINX for Drupal
 
 Version | Tags | Dockerfile
 --- | --- | ---
-1.* | `latest`, `1` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/Dockerfile)
+1.* | `latest`, `stable`, `1` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/stable/Dockerfile)
 
 # Quickstart:
 

@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:stable
 
 MAINTAINER drupal-docker <info@drupaldocker.org>
 
