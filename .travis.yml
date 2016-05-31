@@ -6,6 +6,7 @@ services:
 env:
   matrix:
     - DOCKERFILE="stable"
+    - DOCKERFILE="mainline"
 
 before_script:
   - docker version
