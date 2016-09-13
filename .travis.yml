@@ -7,6 +7,8 @@ env:
   matrix:
     - DOCKERFILE="stable"
     - DOCKERFILE="mainline"
+    - DOCKERFILE="stable-alpine"
+    - DOCKERFILE="mainline-alpine"
 
 before_script:
   - docker version
