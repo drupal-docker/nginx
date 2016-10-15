@@ -7,3 +7,6 @@ VOLUME /var/www/html
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY drupal.conf /etc/nginx/conf.d/default.conf
+
+COPY entrypoint.sh /usr/local/bin/
+CMD "entrypoint.sh"
