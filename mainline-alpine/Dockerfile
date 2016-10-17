@@ -13,7 +13,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY drupal.conf /etc/nginx/conf.d/default.conf
 
 ENV DOCROOT="/var/www/html" \
-  SERVER_NAME="drupal"
+  SERVER_NAME="_"
 
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]
