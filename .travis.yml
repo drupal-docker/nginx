@@ -5,16 +5,16 @@ services:
 
 env:
   matrix:
-    - DOCKERFILE="stable"
-    - DOCKERFILE="mainline"
-    - DOCKERFILE="stable-alpine"
-    - DOCKERFILE="mainline-alpine"
+    - DOCKERFILE="Dockerfile-stable" DOCKERPATH="stable"
+    - DOCKERFILE="Dockerfile-stable-alpine" DOCKERPATH="stable"
+    - DOCKERFILE="Dockerfile-mainline" DOCKERPATH="mainline"
+    - DOCKERFILE="Dockerfile-mainline-alpine" DOCKERPATH="mainline"
 
 before_script:
   - docker version
 
 script:
-  - docker build -t ${DOCKERFILE} ./${DOCKERFILE}
+  - docker build -f ./${DOCKERPATH}/${DOCKERFILE} -t ${DOCKERPATH} ./${DOCKERPATH}
 
 after_script:
   - docker images
