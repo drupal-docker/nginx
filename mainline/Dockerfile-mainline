@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-MAINTAINER drupal-docker <info@drupaldocker.org>
+MAINTAINER digitalpulp
 
 WORKDIR /var/www/html
 VOLUME /var/www/html
