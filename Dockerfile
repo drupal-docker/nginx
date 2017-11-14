@@ -1,6 +1,6 @@
-FROM nginx:mainline-alpine
+FROM nginx:stable-alpine
 
-MAINTAINER digitalpulp
+LABEL maintainer="fathershawn"
 
 WORKDIR /var/www/html
 VOLUME /var/www/html
