@@ -6,7 +6,5 @@ NGINX
 
 | Version | Tags | Dockerfile |
 | --- | --- | --- |
-| 1.11 | `latest`, `1` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/mainline/Dockerfile) |
-|  | `latest-alpine` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/mainline-alpine/Dockerfile) |
-| 1.10 | `stable` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/stable/Dockerfile) |
-|  | `stable-alpine` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/stable-alpine/Dockerfile) |
+| 1.13 | `1.13-2.x` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/1.13/Dockerfile) |
+| 1.12 | `1.12-2.x` | [Dockerfile](https://github.com/drupal-docker/nginx/blob/master/1.12/Dockerfile) |

@@ -1,9 +1,8 @@
-FROM nginx:mainline-alpine
+FROM nginx:1.13-alpine
 
 MAINTAINER drupal-docker <info@drupaldocker.org>
 
 WORKDIR /var/www/html
-VOLUME /var/www/html
 
 # Ensure www-data user exists.
 RUN addgroup -g 82 -S www-data \

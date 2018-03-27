@@ -5,10 +5,8 @@ services:
 
 env:
   matrix:
-    - DOCKERFILE="Dockerfile-stable" DOCKERPATH="stable"
-    - DOCKERFILE="Dockerfile-stable-alpine" DOCKERPATH="stable"
-    - DOCKERFILE="Dockerfile-mainline" DOCKERPATH="mainline"
-    - DOCKERFILE="Dockerfile-mainline-alpine" DOCKERPATH="mainline"
+    - DOCKERFILE="Dockerfile" DOCKERPATH="1.12"
+    - DOCKERFILE="Dockerfile" DOCKERPATH="1.13"
 
 before_script:
   - docker version
